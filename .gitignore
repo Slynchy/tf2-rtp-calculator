@@ -1,0 +1,13 @@
+.env
+.idea
+.vscode
+
+data/currency.json
+data/response.json
+dist/*.json
+node_modules
+
+*.json
+!tsconfig.json
+!package.json
+!package-lock.json

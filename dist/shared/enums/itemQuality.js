@@ -1,0 +1,24 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.EItemQuality = void 0;
+var EItemQuality;
+(function (EItemQuality) {
+    EItemQuality[EItemQuality["Normal"] = 0] = "Normal";
+    EItemQuality[EItemQuality["Genuine"] = 1] = "Genuine";
+    EItemQuality[EItemQuality["UNUSED_RARITY2"] = 2] = "UNUSED_RARITY2";
+    EItemQuality[EItemQuality["Vintage"] = 3] = "Vintage";
+    EItemQuality[EItemQuality["UNUSED_RARITY3"] = 4] = "UNUSED_RARITY3";
+    EItemQuality[EItemQuality["Unusual"] = 5] = "Unusual";
+    EItemQuality[EItemQuality["Unique"] = 6] = "Unique";
+    EItemQuality[EItemQuality["Community"] = 7] = "Community";
+    EItemQuality[EItemQuality["Valve"] = 8] = "Valve";
+    EItemQuality[EItemQuality["SelfMade"] = 9] = "SelfMade";
+    EItemQuality[EItemQuality["Self Made"] = 9] = "Self Made";
+    EItemQuality[EItemQuality["UNUSED_CUSTOMIZED"] = 10] = "UNUSED_CUSTOMIZED";
+    EItemQuality[EItemQuality["Strange"] = 11] = "Strange";
+    EItemQuality[EItemQuality["UNUSED_COMPLETED"] = 12] = "UNUSED_COMPLETED";
+    EItemQuality[EItemQuality["Haunted"] = 13] = "Haunted";
+    EItemQuality[EItemQuality["Collectors"] = 14] = "Collectors";
+    EItemQuality[EItemQuality["Collector's"] = 14] = "Collector's";
+    EItemQuality[EItemQuality["Decorated Weapon"] = 15] = "Decorated Weapon";
+})(EItemQuality || (exports.EItemQuality = EItemQuality = {}));

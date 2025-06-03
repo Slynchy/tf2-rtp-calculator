@@ -1,0 +1,4 @@
+[submodule "lib/javascript-fortuna"]
+	path = lib/javascript-fortuna
+	hash = 5bfc4d16359e932eef5dd6d517b69f70332c2a2c
+	url = https://github.com/Slynchy/javascript-fortuna.git
