@@ -9,8 +9,9 @@
     "skipLibCheck": true,
     "outDir": "dist",
     "baseUrl": "./src",
+    "declaration": true,
     "paths": {
-      "javascript-fortuna": ["../lib/javascript-fortuna/lib/fortuna"],
+      "javascript-fortuna": ["../lib/javascript-fortuna/lib/fortuna"]
     }
   }
 }

@@ -1,0 +1,1 @@
+export declare function calculate(steam64Id: string, itemIdFrom: number, totalCostOfUnboxing: number, itemIdTo: number, currencyDataPath: string, priceDataPath: string, cacheDataPath: string, skipCache?: boolean): Promise<void>;

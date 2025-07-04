@@ -56,7 +56,20 @@ export interface PricesResponse    {
   }
 }
 export interface SpecialItemsResponse { /* … */ }
-export interface UsersResponse     { /* … */ }
+export interface UsersResponse     {
+  "response": {
+    "success": number;
+    "players": Record<string, {
+      "steamid": string;
+      "success": number;
+      "backpack_value": Record<string, number>;
+      "backpack_update": Record<string, number>;
+      "name": string;
+      "backpack_tf_reputation": number;
+      "backpack_tf_trust": {for: number; against: number};
+    }>;
+  }
+}
 export interface ImpersonatedUsersResponse { /* … */ }
 export interface UserTradesResponse { /* … */ }
 

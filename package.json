@@ -1,16 +1,14 @@
 {
   "name": "tf2-rtp-calculator",
-  "version": "1.0.0",
-  "description": "An RTP simulator/calculator for Team Fortress 2 crates.",
+  "version": "1.1.0",
+  "description": "An RTP calculator for Team Fortress 2 crate unbox sessions",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
     "help": "node dist/index.js --help",
     "install-data": "node dist/index.js install --verbose",
-    "update-data": "node dist/index.js install --update --verbose",
-    "test": "node dist/index.js simulate --offload -1 --iterations 1000 --verbose --crateName \"debug\"",
-    "test-10000": "node dist/index.js simulate --offload -1 --iterations 10000 --verbose --crateName \"Crimson Cache Case\""
+    "update-data": "node dist/index.js install --update --verbose"
   },
   "bin": {
     "tf2-rtp-calculator": "./dist/index.js"
@@ -18,22 +16,20 @@
   "keywords": [
     "Team Fortress 2", "TF2",
     "Steam", "RTP",
-    "Simulator", "Simulation"
+    "Calculator", "Calculation"
   ],
   "author": "Sam Lynch <myself@slynch.ovh>",
   "license": "MIT",
+  "peerDependencies": {
+    "typescript": "^5.3.3"
+  },
   "dependencies": {
     "@types/stream-json": "^1.7.8",
-    "cli-progress": "^3.12.0",
     "commander": "^14.0.0",
     "dotenv": "^16.5.0",
-    "javascript-fortuna": "file:./lib/javascript-fortuna",
-    "js-sha512": "^0.9.0",
-    "node-cryptojs-aes": "^0.4.0",
     "stream-json": "^1.9.1"
   },
   "devDependencies": {
-    "@types/cli-progress": "^3.11.6",
     "@types/node": "^22.15.21"
   }
 }

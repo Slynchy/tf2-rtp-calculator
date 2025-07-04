@@ -36,9 +36,12 @@ export async function install(
   priceDataPath: string,
   update: boolean = false,
 ) {
-
   currencyDataPath = path.resolve(currencyDataPath);
   priceDataPath = path.resolve(priceDataPath);
+  // check if output folder exists, if not create it
+  if(!fs.existsSync(path.dirname(priceDataPath))) {
+    fs.mkdirSync(path.dirname(priceDataPath), { recursive: true });
+  }
   const priceDataExists = fs.existsSync(priceDataPath);
 
   if(!apiKey) {

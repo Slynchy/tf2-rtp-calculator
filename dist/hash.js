@@ -4,7 +4,8 @@
  * Hashes and unhashes into a 32-bit integer.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.unhash = exports.hash = void 0;
+exports.hash = hash;
+exports.unhash = unhash;
 /* ----- bit positions & masks ----- */
 const HAT_SHIFT = 0, HAT_MASK = 0xff << HAT_SHIFT;
 const STR_SHIFT = 8, STR_MASK = 1 << STR_SHIFT;
@@ -25,7 +26,6 @@ function hash(hatIndex, isStrange, isUnusual, unusualEffectIndex) {
         ((unusualEffectIndex & 0xff) << FX_SHIFT);
     return v >>> 0; // force Uint32
 }
-exports.hash = hash;
 /**
  * Unhashes the given 32-bit integer into hat flags.
  * @param v The hashed value to unhash.
@@ -38,4 +38,3 @@ function unhash(v) {
     flags.unusualEffectIndex = (v & FX_MASK) >>> FX_SHIFT;
     return flags;
 }
-exports.unhash = unhash;

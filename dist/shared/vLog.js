@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.v = exports.setVerbose = void 0;
+exports.v = void 0;
+exports.setVerbose = setVerbose;
 let verbose = false;
 function setVerbose(v) {
     verbose = v;
 }
-exports.setVerbose = setVerbose;
 exports.v = {
     error: (...args) => { if (verbose)
         console.error(...args); },
